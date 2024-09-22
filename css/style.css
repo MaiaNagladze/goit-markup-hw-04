@@ -1,0 +1,436 @@
+/*========= COMMET STYLES =========*/
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  ul,
+  ol {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  .container {
+    max-width: 1158px;
+    padding: 0 15px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    }
+    .image-container {
+      padding-bottom: 0;
+    }
+  button {
+    cursor: pointer;
+    display: block;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-style: inherit;
+    font-family: inherit;
+  }
+  .section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  h2 {
+    text-align: center;
+    font-family: inherit;
+  }
+  h3 {
+    font-family: inherit;
+    color:inherit; 
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #ffffff;
+  }
+
+  /*========= /COMMET STYLES =========*/
+  
+  /*========= HEADER STYLES =======*/
+  
+  .page-header-line {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    }
+    .page-header{
+      border-bottom: 1px solid #E7E9FC;
+    }
+  .page-nav{
+    display: flex;
+    align-items: center;
+   }
+  .page-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+  }
+  .logo-color {
+    color: #2e2f42;;
+  }
+  .manu{
+    display: flex;
+    gap: 40px;
+  }
+  .contacts-list{
+    display: flex; 
+    gap: 40px;
+  }
+  .manu-link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .manu-link:hover,
+  .manu-link:focus {
+    color: #404bbf;
+  }
+  .item-studio {
+    position: relative;
+  }
+  .item-studio::after {
+    content: '';
+    background-color: #404BBF;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 55px;
+    left: 0;
+}
+  .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .link:hover, 
+  .link:focus {
+    color: #404bbf;
+  }
+  .page-contacts {
+    font-style: normal;
+  }
+
+  /*========= /HEADER STYLES =======*/
+  
+  /*======== MAIN STYLES ======*/
+  
+  /*================ HERO SECTION ==========*/
+  
+  .hero {
+   
+    height: 42%;
+    padding: 188px 0;
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba( 46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
+    background-size: cover;
+  }
+ .title-hero {
+    max-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 48px;
+   }
+  .order-service {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff; 
+    background-color: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 16px 32px; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
+  .order-service:hover,
+  .order-service:focus {
+    background-color: #404bbf;
+  }
+
+  /*================ /HERO SECTION ==========*/
+  
+  /*================= OUR BENEFITS ==========*/
+
+  .preference-list{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .preference-item {
+    width: calc((100% - 72px) / 4);
+  }
+  .title-preference-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+  }
+  .text-preference-item {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .preference-icon {
+    background-color: #F4F4FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    max-width: 100%;
+    border: 1px solid #F4F4FD;
+    border-radius: 4px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
+    margin: 0 auto 32px auto;
+  }
+
+  /*================= /OUR BENEFITS ==========*/
+  
+  /*============== OUR TEAM ============*/
+
+  .workers-section {
+    background-color: #f4f4fd;
+  }
+  .title-workers {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+    }
+  .workers-list{
+    display: flex;
+    gap: 24px;
+  }
+  .workers-list-item {
+    background-color: #ffffff;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .name-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 32px 16px;
+  }
+  .name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 8px;
+   }
+  .position {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #434455;
+    margin-bottom: 8px;
+  }
+  .workers-photo {
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  .social-list {
+    display: flex;
+    justify-content: space-around;
+  }
+  .social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #404BBF;
+    width: 40px;
+    height: 40px;
+  }
+.social-icon {
+    fill: #F4F4FD;
+    stroke: none;
+  }
+
+  /*============== /OUR TEAM ============*/
+  
+  /*============= PORTFOLIO ==============*/
+  
+  .title-offers {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+  }
+  .offers-list{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    max-width: 1158px;
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+  .offers-item{
+    width: calc((100% - 48px) / 3);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .container-card {
+    padding: 32px 16px; 
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+  }
+  .offers-service {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+   }
+  .offers-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+  }
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8);
+  }
+  .ingredient-overlay {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4D5AE5;
+    overflow: auto;
+    padding: 40px 32px;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .image-container:hover .ingredient-overlay {
+    transform: translateY(0);
+  }
+ 
+  /*============= /PORTFOLIO ==============*/
+  
+  /*======== /MAIN STYLES ======*/
+  
+  /*=========== PAGE FOOTER ==============*/
+
+  .business {
+    background: #2e2f42;
+    padding: 100px 0;
+  }
+  .container-footer {
+    display: flex;
+    justify-content: flex-start;
+    gap: 120px;
+    }
+  .container-business {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    min-width: 264px;
+    }
+  .logo-footer {
+    display: inline-block;
+    margin-bottom: 16px;
+  }
+  .logo-color-footer {
+    color: #f4f4fd;
+  }
+  .text-footer {
+    max-width: 264px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+  }
+.footer-title {
+   font-weight: 500;
+   line-height: 1.5;
+   letter-spacing: 0.02em;
+   color: #fff;
+   margin-bottom: 16px;
+}
+.footer-social {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 208px;
+}
+.social-list-footer {
+   gap: 16px;
+}
+.social-link-footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: #404BBF;
+   width: 40px;
+   height: 40px;
+   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link-footer:hover,
+.social-link-footer:focus {
+   background-color: #31D0AA;
+  }
+
+  /*=========== PAGE FOOTER ==============*/
