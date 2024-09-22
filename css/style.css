@@ -76,6 +76,9 @@ h1, h2, h3, h4, h5, h6, p {
     }
     .page-header{
       border-bottom: 1px solid #E7E9FC;
+      box-shadow: 0 2px 1px rgba(46, 47, 66, 0.08),
+      0 1px 1px rgba(46, 47, 66, 0.16),
+      0 1px 6px rgba(46, 47, 66, 0.08);
     }
   .page-nav{
     display: flex;
@@ -118,6 +121,7 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .item-studio {
     position: relative;
+    color: #404BBF;
   }
   .item-studio::after {
     content: '';
@@ -126,7 +130,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 4px;
     border-radius: 2px;
     position: absolute;
-    top: 70px;
+    bottom: -1;
     left: 0;
 }
   .link {
@@ -160,6 +164,8 @@ h1, h2, h3, h4, h5, h6, p {
     background-image: linear-gradient(rgba( 46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
  .title-hero {
     max-width: 496px;
@@ -218,16 +224,17 @@ h1, h2, h3, h4, h5, h6, p {
     color: #434455;
   }
   .preference-icon {
+    height: 112px;
     background-color: #F4F4FD;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 24px;
     max-width: 100%;
-    border: 1px solid #F4F4FD;
+    border: 1px solid #8e8f99;
     border-radius: 4px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.08);
-    margin: 0 auto 32px auto;
+    margin-bottom: 8px;
   }
 
   /*================= /OUR BENEFITS ==========*/
@@ -253,11 +260,13 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #ffffff;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .name-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 32px 0;
     margin: 32px 16px;
   }
   .name {
@@ -277,18 +286,22 @@ h1, h2, h3, h4, h5, h6, p {
     margin-bottom: 8px;
   }
   .workers-photo {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+    ;
   }
   .social-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap:24px
   }
   .social-list-link {
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background-color: #404BBF;
+    background-color: #4d5ae5;
     width: 40px;
     height: 40px;
   }
@@ -319,9 +332,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
   .offers-item{
     width: calc((100% - 48px) / 3);
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .container-card {
     padding: 32px 16px; 
@@ -350,6 +364,7 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8);
   }
   .ingredient-overlay {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
@@ -381,6 +396,7 @@ h1, h2, h3, h4, h5, h6, p {
   .container-footer {
     display: flex;
     justify-content: flex-start;
+    align-items: baseline;
     gap: 120px;
     }
   .container-business {
@@ -388,6 +404,7 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: flex-start;
     flex-direction: column;
     min-width: 264px;
+    margin-right: 120px;
     }
   .logo-footer {
     display: inline-block;
@@ -402,11 +419,11 @@ h1, h2, h3, h4, h5, h6, p {
     letter-spacing: 0.02em;
     color: #f4f4fd;
   }
-.footer-title {
+.footer-text {
    font-weight: 500;
    line-height: 1.5;
    letter-spacing: 0.02em;
-   color: #fff;
+   color: #ffffff;
    margin-bottom: 16px;
 }
 .footer-social {
@@ -426,8 +443,8 @@ h1, h2, h3, h4, h5, h6, p {
    background-color: #4D5AE5;
    width: 40px;
    height: 40px;
-   transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   }
 .social-link-footer:hover,
 .social-link-footer:focus {
    background-color: #31D0AA;
