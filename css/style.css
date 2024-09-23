@@ -157,8 +157,8 @@ h1, h2, h3, h4, h5, h6, p {
   /*================ HERO SECTION ==========*/
   
   .hero {
-    max-width: 1440px;
-    height: 42%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 188px 0;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba( 46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -229,7 +229,6 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 24px;
     max-width: 100%;
     border: 1px solid #8e8f99;
     border-radius: 4px;
@@ -243,7 +242,10 @@ h1, h2, h3, h4, h5, h6, p {
 
   .workers-section {
     background-color: #f4f4fd;
-  } 
+   } 
+   .container-workers {
+    padding: 120px 0;
+   }
   .title-workers {
     font-size: 36px;
     line-height: 1.11;
@@ -263,14 +265,9 @@ h1, h2, h3, h4, h5, h6, p {
     box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08),
     0 1px 1px rgba(46, 47, 66, 0.16),
     0 2px 1px rgba(46, 47, 66, 0.08);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .name-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     padding: 32px 0;
-    margin: 32px 16px;
   }
   .name {
     font-weight: 500;
@@ -332,14 +329,11 @@ h1, h2, h3, h4, h5, h6, p {
   .offers-list{
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-    max-width: 1158px;
     column-gap: 24px;
     row-gap: 48px;
   }
   .offers-item{
     width: calc((100% - 48px) / 3);
-    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .offers-item:hover,
@@ -372,7 +366,6 @@ h1, h2, h3, h4, h5, h6, p {
   .image-container {
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.8);
   }
   .ingredient-overlay {
     line-height: 1.5;
@@ -407,13 +400,8 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    gap: 120px;
     }
   .container-business {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    min-width: 264px;
     margin-right: 120px;
     }
   .logo-footer {
@@ -435,12 +423,6 @@ h1, h2, h3, h4, h5, h6, p {
    letter-spacing: 0.02em;
    color: #ffffff;
    margin-bottom: 16px;
-}
-.footer-social {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  max-width: 208px;
 }
 .social-list-footer {
    gap: 16px;
